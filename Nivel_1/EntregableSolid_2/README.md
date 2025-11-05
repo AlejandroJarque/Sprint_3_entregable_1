@@ -1,0 +1,2 @@
+
+## In this second installment, I've refactored the program that manages different types of payments. To do this, I've used an interface implemented by the classes that reference payment types, such as bank transfer, PayPal, and Stripe. Finally, I've added a PaymentProcessor class, which handles processing payments for each payment method.

@@ -1,5 +1,6 @@
 <?php
 
+
 class Results {
 
     protected $score = [];
@@ -18,4 +19,5 @@ class Results {
         return $this -> score;
     }
 }
+
 ?>

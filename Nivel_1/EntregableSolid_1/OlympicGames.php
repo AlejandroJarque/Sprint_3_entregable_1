@@ -5,27 +5,11 @@ class OlympicGames {
     private $events = [];
     private $results = [];
 
-    public function addTo(array $list, object ...$items):void {
+    public function __construct(array $athletes, array $events, array $results) {
 
-        foreach($items as $item) {
-
-            $list [] = $item;
-        }
-    }
-
-    public function addAthletes(Athletes ...$athletes): void {
-
-        $this -> addTo($this -> athletes, ...$athletes);
-    }
-
-    public function addEvents(Events ...$events): void {
-
-        $this -> addTo($this -> events, ...$events);
-    }
-
-    public function addResults(Results ...$results): void {
-
-        $this -> addTo($this -> results, ...$results);
+        $this -> athletes = $athletes;
+        $this -> events = $events;
+        $this -> results = $results;
     }
 
     public function showInfo(Results $results): void {

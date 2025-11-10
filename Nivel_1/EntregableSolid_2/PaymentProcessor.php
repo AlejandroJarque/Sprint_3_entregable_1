@@ -11,7 +11,7 @@ class PaymentProcessor {
 
     public function toPay(float $amount) {
 
-        $this -> gateway -> sendPayment($amount);
+        return $this -> gateway -> sendPayment($amount);
     }
 }
 ?>

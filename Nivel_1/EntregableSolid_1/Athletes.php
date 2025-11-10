@@ -1,9 +1,11 @@
 <?php
 
+
 class Athletes {
 
     protected $name;
     protected $country;
+ 
 
     public function __construct(string $name, string $country) {
 
@@ -26,4 +28,5 @@ class Athletes {
         return "Name: ". $this -> name." (Country: ". $this -> country.")";
     }
 }
+
 ?>

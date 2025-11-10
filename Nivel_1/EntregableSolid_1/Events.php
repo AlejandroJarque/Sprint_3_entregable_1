@@ -1,5 +1,6 @@
 <?php
 
+
 class Events {
 
     protected $event;
@@ -26,4 +27,5 @@ class Events {
         return "Event: ". $this -> event." (Date: ".$this -> date.")";
     }
 }
+
 ?>
